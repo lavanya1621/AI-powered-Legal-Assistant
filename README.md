@@ -22,10 +22,11 @@ LexBot is an AI-powered legal assistant that helps users upload legal documents 
 flowchart TD
     U[User] -->|Uploads Document| A[Streamlit App]
     A --> B[Process with Gemini Pro]
-    A --> C[Query VectorDB (Legal Textbook)]
+    A --> C[Query VectorDB - Legal Textbook]
     B --> D[Answer Generated]
     C --> B
     D --> E{OTP Verification}
     E -->|Valid OTP| F[Display Answer]
     E -->|Invalid/Expired OTP| G[Error Message]
     A --> H[Send OTP via Email or Show On-Screen]
+```
